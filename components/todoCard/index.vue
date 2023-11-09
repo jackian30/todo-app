@@ -60,6 +60,7 @@
         class="task-list"
         v-if="todo.tasks.length"
       >
+        <!-- Iterate the Tasks -->
         <TransitionGroup name="list">
           <TodoCardTask
             v-for="task in todo.tasks"

@@ -1,4 +1,6 @@
 .todo-card {
+
+  // Custom Input for New Task
   .v-input {
     .v-field {
       border-radius: 50px;
@@ -29,15 +31,19 @@
     }
   }
 
+  // Custom Input for New Task
+
   .v-card-text {
     max-height: 250px;
     overflow: auto;
     padding-bottom: 0px;
 
+    // Task Items List
     .v-list {
       padding-top: 20px;
       padding-bottom: 20px;
 
+      // Task Item
       .task-item {
         border: 1px solid #249055 !important;
         border-radius: 5px !important;
@@ -72,7 +78,11 @@
           }
         }
       }
+
+      // Task Items End
     }
+
+    // Task Items List End
   }
 
   .v-card-title {
@@ -88,6 +98,7 @@
   }
 }
 
+// Tasks Transitions
 .list-enter-active,
 .list-leave-active {
   transition: all 0.5s ease;
@@ -98,3 +109,5 @@
   opacity: 0;
   transform: translateX(30px);
 }
+
+// Tasks Transitions End
