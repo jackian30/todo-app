@@ -1,0 +1,100 @@
+.todo-card {
+  .v-input {
+    .v-field {
+      border-radius: 50px;
+
+      .v-field__outline {
+        color: #246caa !important;
+
+        .v-field__outline__start {
+          display: none;
+
+        }
+
+        .v-field__outline__end {
+          border: 2px solid !important;
+          border-radius: inherit !important;
+        }
+      }
+
+      .v-field__overlay {
+        background: #fff;
+      }
+
+      .v-input-content .v-field__append-inner {
+        i {
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+
+  .v-card-text {
+    max-height: 250px;
+    overflow: auto;
+    padding-bottom: 0px;
+
+    .v-list {
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      .task-item {
+        border: 1px solid #249055 !important;
+        border-radius: 5px !important;
+
+        &.done {
+          border: 1px solid #24905546 !important;
+
+          .v-list-item__prepend,
+          .v-list-item__content {
+            opacity: .7 !important;
+          }
+        }
+
+        &:not(:first-child) {
+          margin-top: 10px;
+        }
+
+        .v-list-item__prepend,
+        .v-list-item__append {
+          i {
+            opacity: 1 !important;
+          }
+        }
+
+        .v-list-item__append {
+          display: none;
+        }
+
+        &:hover {
+          .v-list-item__append {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .v-card-title {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .v-card-title,
+  .v-card-actions {
+    background: rgba($color: #000000, $alpha: .1);
+    padding: 15px;
+  }
+}
+
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
