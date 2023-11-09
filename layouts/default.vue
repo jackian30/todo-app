@@ -7,6 +7,6 @@
 </template>
 <style lang="scss">
 .v-application {
-  background: linear-gradient(#249055, #242455) !important;
+  background: linear-gradient(#249055, #244855) !important;
 }
 </style>
